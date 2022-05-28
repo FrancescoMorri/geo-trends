@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+geopy = "*"
+twint = {git = "https://github.com/twintproject/twint.git"}
+matplotlib = "*"
+wordcloud = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
