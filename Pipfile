@@ -8,6 +8,7 @@ geopy = "*"
 twint = {git = "https://github.com/twintproject/twint.git"}
 matplotlib = "*"
 wordcloud = "*"
+streamlit = "*"
 
 [dev-packages]
 
