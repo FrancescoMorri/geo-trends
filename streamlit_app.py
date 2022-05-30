@@ -60,5 +60,4 @@ if submitted:
     ax.imshow(wordcloud)
     ax.set_axis_off()
     st.pyplot(fig)
-    st.balloons()
 
