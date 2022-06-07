@@ -9,6 +9,8 @@ twint = {git = "https://github.com/twintproject/twint.git"}
 matplotlib = "*"
 wordcloud = "*"
 streamlit = "*"
+folium = "*"
+streamlit-folium = "*"
 
 [dev-packages]
 
