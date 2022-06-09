@@ -19,12 +19,15 @@ def get_tweets(lat, lng, radius, N):
 
 submitted = False
 
+st.set_page_config(page_title="Geo-Trends", page_icon="earth_africa")
+
 st.title("Geo-Trends")
 st.caption("Choose a location on the map, specify a radius to search in and the number of tweets to scrape and wait for a graph of the most used hashtags in the area.")  
 
 
 with st.form("Parameters"):
-    m = fl.Map()
+    m = fl.Map(tiles='https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}.png',
+                attr='Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC')
     m.add_child(fl.LatLngPopup())
     map = st_folium(m, height=350, width=700)
     
